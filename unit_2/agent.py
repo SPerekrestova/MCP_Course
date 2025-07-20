@@ -10,10 +10,10 @@ agent = Agent(
             "command": "npx",
             "args": [
                 "mcp-remote",
-                "https://sperva-mcp-sentiment.hf.space/gradio_api/mcp/sse"  # Your Gradio MCP server
+                "http://localhost:7860/gradio_api/mcp/sse"  # Your Gradio MCP server
             ]
         }
     ],
 )
 
-agent.run()
+agent.run("Analyze the sentiment of the following text 'This is awesome'")
